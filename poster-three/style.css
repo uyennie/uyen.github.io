@@ -1,0 +1,78 @@
+body {
+    background-color: gray;
+}
+
+div.poster {
+    background-color: white;
+    width: 75%;
+    /* border-radius: 500px 500px 0px 0px; */
+    margin: auto;
+}
+
+div.text {
+    font-size: 120px;
+    font-family: Arial;
+    text-align: center;
+    color: gray;
+    transition: 0.5s;
+    /* -webkit-text-stroke: 3px palegreen; */
+}
+
+/* rule 1 */
+
+div.text.one {
+    text-shadow: 10px black;
+    
+}
+
+div.text.two {
+    text-shadow: 20px black;
+}
+
+div.text.three {
+    text-shadow: 50px black;
+}
+
+
+/* rule 2 */
+
+div.text.a {
+    background-color: pink;
+    border-radius: 80px;
+    width: 50%;
+}
+
+div.text.b {
+    background-color: pink;
+    border-radius: 0px;
+    width: 100%;
+}
+
+div.text.c {
+    background-color: pink;
+    border-radius: 20px;
+    width: 20%;
+}
+
+
+/* rule 3 */
+
+div.text.x {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+div.text.y {
+    font-family: arial narrow;
+}
+
+div.text.z {
+    font-family: monospace;
+
+}
+
+div.small {
+    font-size: 60px;
+    text-align: left;
+    color: palegreen;
+    background-color: black;
+}
