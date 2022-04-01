@@ -1,0 +1,136 @@
+body {
+    background: gainsboro;
+}
+
+div.poster {
+    background: gainsboro;
+    /* background: radial-gradient(circle, pink, skyblue); */
+    width: 75%;
+    /* border-radius: 500px 500px 0px 0px; */
+    margin: auto;
+}
+
+div.container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+div.col {
+    /* outline: 1px solid black; */
+    box-shadow: inset 0px 0px 20px 3px black;
+    overflow: hidden;
+}
+
+/* -------------- */
+/* --GRID START-- */
+/* -------------- */
+
+/* 2 column grid */
+
+div.w1-2 {
+    width: 50%;
+}
+
+div.w2-2 {
+    width: 100%;
+}
+
+/* 3 column grid */
+
+div.w1-3 {
+    width: 33.33333%;
+}
+
+div.w2-3 {
+    width: 66.66666%;
+}
+
+div.w3-3 {
+    width: 100%;
+}
+
+/* 4 column grid */
+
+div.w1-4 {
+    width: 25%;
+}
+
+div.w2-4 {
+    width: 50%;
+}
+
+div.w3-4 {
+    width: 75%;
+}
+
+div.w4-4 {
+    width: 100%;
+}
+
+/* -------------- */
+/* ---GRID END--- */
+/* -------------- */
+
+
+div.text {
+    font-size: 70px;
+    font-family: Arial;
+    text-align: center;
+    color: black;
+    transition: 0.5s;
+    /* -webkit-text-stroke: 3px palegreen; */
+}
+
+/* rule 1 */
+
+div.text.one {
+    text-align: center;
+    
+}
+
+div.text.two {
+    text-align: left;
+}
+
+div.text.three {
+    text-align: right;
+}
+
+
+/* rule 2 */
+
+div.text.a {
+    font-size: 30px;
+}
+
+div.text.b {
+    font-size: 60px;
+}
+
+div.text.c {
+    font-size: 100px;
+}
+
+
+/* rule 3 */
+
+div.text.x {
+    transform: skew(0deg);
+}
+
+div.text.y {
+    transform: skew(-25deg);
+}
+
+div.text.z {
+    
+}
+
+div.small {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    color: black;
+    margin-bottom: 20px;
+}
