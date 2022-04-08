@@ -3,26 +3,8 @@ body {
     box-shadow: inset 0 0 30px 20px slateblue;
 }
 
-/* fonts */
-@font-face {
-    font-family: "rule1";
-    src: url("fonts/BBB_Simulator_Outline.woff");
-}
-
-@font-face {
-    font-family: "rule2";
-    src: url("fonts/BBBAufgangOstGX.woff");
-}
-
-@font-face {
-    font-family: "rule3";
-    src: url("fonts/BBBOcelot-Smooth.woff");
-}
-
 div.poster {
-    /* background: radial-gradient(circle, pink, skyblue); */
     width: 95%;
-    /* border-radius: 500px 500px 0px 0px; */
     margin: auto;
 }
 
@@ -33,7 +15,6 @@ div.container {
 }
 
 div.col {
-    /* outline: 1px solid black; */
     overflow: hidden;
 }
 
@@ -57,7 +38,6 @@ div.col {
 
 div.text {
     font-size: 15px;
-    /* box-shadow: inset 0 0 10px 5px slateblue; */
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     color: slateblue;
@@ -70,6 +50,15 @@ div.symbol {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     color: slateblue;
+    margin-bottom: 20px;
+}
+
+div.byline {
+    font-family: Arial narrow;
+    font-size: 30px;
+    color: slateblue;
+    width: 100%;
+    margin-bottom: 20px;
 }
 
 /* rule 1 */
