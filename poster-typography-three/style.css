@@ -1,6 +1,6 @@
 body {
-    background: black; 
-    box-shadow: inset 0 0 30px 20px palegreen;
+    background: gainsboro; 
+    box-shadow: inset 0 0 30px 20px hotpink;
     border-radius: 500px 500px 0 0;
 }
 
@@ -49,18 +49,18 @@ div.text.three {
 
 div.text.a {
     border-radius: 0px;
-    background: radial-gradient( mediumpurple 0%, palegreen 25%, mediumpurple 50%, black 75%);  
+    background: radial-gradient( orange 0%, hotpink 35%, gainsboro 75%);  
     
 }
 
 div.text.b {
-    border-radius: 100px;
-    background: radial-gradient( palegreen 0%,mediumpurple 25%, palegreen 100%);  
+    border-radius: 50px;
+    background: radial-gradient( hotpink 0%, gainsboro 50%, orange 100%);  
 }
 
 div.text.c {
-    border-radius: 50px; 
-    background: radial-gradient( black 0%, palegreen 30%, mediumpurple 75%);  
+    border-radius: 200px; 
+    background: radial-gradient( orange 0%, gainsboro 50%, hotpink 100%);  
 
 }
 
@@ -80,14 +80,14 @@ div.text.z {
 }
 
 div.byline {
-    background: black;  
-    box-shadow: inset 0 0 20px 10px mediumpurple;
+    background: gainsboro;  
+    box-shadow: inset 0 0 20px 10px orange;
     padding: 1%;
     font-family: Arial narrow;
     width: 30%;
     font-size: 20px;
     border-radius: 0 0 100px 100px;
-    color: whitesmoke;
+    color: hotpink;
     margin: auto;
     text-align: center;
 }
