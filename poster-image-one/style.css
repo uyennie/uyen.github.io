@@ -24,6 +24,7 @@ div.col {
     overflow: hidden;
 }
 
+
 /* 2 column grid */
 
 div.w1-2 {
@@ -41,6 +42,7 @@ div.text {
     color: black;
     transition: 0.5s; 
 }
+
 
 /* rule 1 */
 

@@ -1,12 +1,7 @@
 body {
-    background: radial-gradient(red, white 30vw); 
-}
-
-/* fonts */
-
-@font-face {
-    font-family: "body";
-    src: url("BBBouquet-Regular.woff");
+    background: black; 
+    box-shadow: inset 0 0 30px 20px palegreen;
+    border-radius: 500px 500px 0 0;
 }
 
 div.poster {
@@ -15,7 +10,7 @@ div.poster {
 
 div.container {
     width: 75%;
-    margin-left: 22%;
+    margin: auto;
     display: flex;
     flex-wrap: wrap;
     align-items: stretch;
@@ -27,11 +22,10 @@ div.col {
 
 
 div.text {
-    font-size: 100px;
-    box-shadow: inset 0 0 20px 10px red; 
+    font-size: 90px;
     font-family: Arial narrow;
     text-align: center;
-    color: black;
+    color: whitesmoke;
     transition: 0.5s;
 }
 
@@ -54,15 +48,20 @@ div.text.three {
 /* rule 2 */
 
 div.text.a {
-    border-radius: 80px;
+    border-radius: 0px;
+    background: radial-gradient( mediumpurple 0%, palegreen 25%, mediumpurple 50%, black 75%);  
+    
 }
 
 div.text.b {
-    border-radius: 0px;
+    border-radius: 100px;
+    background: radial-gradient( palegreen 0%,mediumpurple 25%, palegreen 100%);  
 }
 
 div.text.c {
-    border-radius: 20px;
+    border-radius: 50px; 
+    background: radial-gradient( black 0%, palegreen 30%, mediumpurple 75%);  
+
 }
 
 
@@ -80,19 +79,16 @@ div.text.z {
     width: 25%;
 }
 
-div.small {
-    width: 20%;
-    font-size: 20px;
+div.byline {
+    background: black;  
+    box-shadow: inset 0 0 20px 10px mediumpurple;
+    padding: 1%;
     font-family: Arial narrow;
-    text-align: right;
-    color: black;
-    margin-left: 1%;
+    width: 30%;
+    font-size: 20px;
+    border-radius: 0 0 100px 100px;
+    color: whitesmoke;
+    margin: auto;
+    text-align: center;
 }
 
-div.left {
-    text-align: left;
-}
-
-div.right {
-    text-align: right;
-}
