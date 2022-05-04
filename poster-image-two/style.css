@@ -193,12 +193,12 @@ div.text2.x {
 }
 
 div.text2.y {
-    background-color: linear-gradient(blueviolet, yellow);
+    background-color: blueviolet;
     text-align: left;
 }
 
 div.text2.z {
-    background-color: linear-gradient(black, transparent);
+    background-color: black;
     text-align: right;
 }
 
