@@ -1,0 +1,27 @@
+transparency page
+
+header x
+    logo
+        a
+    nav
+        a a a a
+title x
+featured image
+    caption
+about x
+footnotes x
+    note title x
+    note desc x
+    note outgoing link x
+        a x
+container x
+    item x
+        img x
+        paragrpah
+    item x
+        img x
+        paragrpah
+    item x
+        img x
+        paragrpah
+footer

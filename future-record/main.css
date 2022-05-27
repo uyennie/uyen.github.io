@@ -1,5 +1,80 @@
 body {
-    background-color: navajowhite;
+    background-color: white;
     font-family: Arial narrow;
     font-size: 24px;
+}
+
+div.header {
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 10%; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    
+
+    /* display: flex;
+    flex-wrap: wrap; */
+}
+
+div.content {
+    width: 90%;
+    margin-left: 10%;
+}
+
+div.logo {
+    padding: 10px;
+    height: 50%;
+}
+
+div.nav {
+    height: 50%;
+}
+
+div.nav a{
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+
+div.nav img {
+    height: 30px;
+    width: 42px;
+}
+
+.nav a:hover {
+    background-color: gainsboro;
+    border-radius: 50px; 
+}
+
+.hide {
+    opacity: 0;
+}
+
+div.masthead {
+    font-size: 50vw; 
+    /* vw = percentage of the viewport width; i.e this will take up 40% of the user's viewport width */
+    line-height: 50vw;
+}
+
+div.about {
+    padding: 10px;
+    font-family: Times;
+    font-size: 72px;
+}
+
+div.car {
+    font-size: 72px;
+}
+
+div.bike {
+    display: none;
+}
+
+div.bike.show {
+    display: block;
 }

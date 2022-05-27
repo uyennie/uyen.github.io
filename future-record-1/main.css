@@ -1,0 +1,131 @@
+body {
+    background-color: white;
+    font-family: Arial narrow;
+    font-size: 24px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: blue;
+}
+
+img {
+    width: 100%;
+}
+
+div.header {
+    width: 100%; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    top: 0; /* Stay at the top */
+    left: 0;
+    display: flex;
+    flex-wrap: wrap; 
+    /* border-bottom: 1px solid black; */
+    box-shadow: 0px 0px 20px black;
+    /* background-color: white; */
+}
+
+div.header a {
+    color: black;
+}
+
+div.header a:hover {
+    color: blue;
+}
+
+div.logo {
+    padding: 20px;
+    width: 50%;
+}
+
+div.nav {
+    width: 50%;
+    padding: 20px;
+}
+
+div.masthead {
+    margin-top: 5%;
+    font-size: 50vw; 
+    /* vw = percentage of the viewport width; i.e this will take up 40% of the user's viewport width */
+    line-height: 40vw;
+}
+
+div.about {
+    padding: 20px;
+    font-family: Times;
+    font-size: 72px;
+    /* line-height: 35vw; */
+}
+
+div.footnotes {
+    display: flex;
+    flex-wrap: wrap;
+    border-top: 1px solid black;
+}
+
+div.note {
+    width: 33.333%;
+    padding: 20px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+div.title {
+    font-size: 192px;
+    color: gray;
+    letter-spacing: -4px;
+    text-align: center;
+    margin-top: 100px;
+    /* top: 0;
+    position: sticky; */
+}
+
+div.keywords {
+    font-size: 72px;
+    font-family: Times;
+    text-align: center;
+}
+
+div.container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+
+div.item {
+    width: 33.333%;
+    padding: 20px;
+}
+
+a.button {
+    background-color: blue;
+    color: gainsboro;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border-radius: 20px;
+}
+
+div.item.pushright {
+    margin-right: 33.333%;
+}
+
+div.item.larger {
+    width: 66.666%;
+}
+
+div.number {
+    font-size: 72px;
+}
+
+div.featureimage {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
