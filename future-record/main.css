@@ -1,80 +1,343 @@
 body {
     background-color: white;
-    font-family: Arial narrow;
+    font-family: Arial;
     font-size: 24px;
 }
 
-div.header {
-    padding-left: 10px;
-    padding-right: 10px;
-    height: 100%; /* Full-height: remove this if you want "auto" height */
-    width: 10%; /* Set the width of the sidebar */
-    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-    z-index: 1; /* Stay on top */
-    top: 0; /* Stay at the top */
-    left: 0;
-    overflow-x: hidden; /* Disable horizontal scroll */
-    
-
-    /* display: flex;
-    flex-wrap: wrap; */
+img {
+    width: 100%;
+    height: 100%;
 }
 
-div.content {
-    width: 90%;
-    margin-left: 10%;
-}
-
-div.logo {
-    padding: 10px;
-    height: 50%;
-}
-
-div.nav {
-    height: 50%;
-}
-
-div.nav a{
-    padding: 10px;
-    display: block;
+a {
     text-decoration: none;
     color: black;
 }
 
-div.nav img {
-    height: 30px;
-    width: 42px;
+a:hover {
+    background-color: lime;
 }
 
-.nav a:hover {
-    background-color: gainsboro;
-    border-radius: 50px; 
+span:hover {
+    background-color: lime;
+    font-style: italic;
 }
 
-.hide {
-    opacity: 0;
+div.fullbleed {
+    width: 100%;
+    height: 100vh;
+    /* background-size: cover;
+    background-repeat: no-repeat; */
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
 }
 
-div.masthead {
-    font-size: 50vw; 
-    /* vw = percentage of the viewport width; i.e this will take up 40% of the user's viewport width */
-    line-height: 50vw;
+div.video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
 }
 
-div.about {
-    padding: 10px;
-    font-family: Times;
-    font-size: 72px;
+div.nav {
+    padding: 20px;
 }
 
-div.car {
-    font-size: 72px;
+div.folder {
+    display: flex;
+    flex-wrap: wrap; 
+    /* background-color: antiquewhite; */
+    align-items: center;
+    margin-bottom: 20px;
 }
 
-div.bike {
+/* div.folder:hover {
+    box-shadow: inset 0px 0px 20px 0px grey;
+    border-radius: 100px;
+    background-color: white; 
+} */
+
+div.folder img {
+    width: 100px;
+}
+
+div.foldertitle {
+    padding-left: 10px;
+    width: 20%;
+}
+
+div.folderhover {
     display: none;
 }
 
-div.bike.show {
+div.folderhover.show {
+    margin-top: 10px;
+    padding: 20px;
+    border-radius: 50px 50px 50px 50px;
+    box-shadow: inset 0px 0px 20px 0px grey;
+    background-color: white;
     display: block;
 }
+
+div.main {
+    height: 150vh;
+    /* padding: 10px; */
+    /* background-color: white; */
+    margin-top: 85vh;
+}
+
+div.title {
+    font-size: 96px;
+    padding: 30px;
+    background-color: white;
+    border-radius: 70px 70px 0px 0px;
+    box-shadow: 10px -10px 20px gainsboro;
+}
+
+div.page.title {
+    font-size: 96px;
+    padding: 30px;
+    background-color: white;
+    border-radius: 0px 70px 0px 0px;
+    box-shadow: 10px -10px 20px gainsboro;
+}
+
+div.about {
+    font-size: 48px;
+    line-height: 52px;
+    padding: 30px;
+    background-color: white;
+    border-radius: 0px 70px 0px 0px;
+    box-shadow: 10px -10px 20px gainsboro;
+}
+
+div.container {
+    background-color: white;
+}
+
+div.files {
+    padding: 30px;
+    box-shadow: 10px -10px 20px gainsboro;
+}
+
+div.item {
+    display: flex;
+    flex-wrap: wrap; 
+    align-items: center;
+    /* box-shadow: 5px 5px 10px gainsboro; */
+    border-radius: 55px 55px 55px 55px;
+}
+
+div.item:hover {
+    background-color: gainsboro;
+    box-shadow: inset 0px 0px 20px 0px grey;
+}
+
+div.item.no-hover:hover {
+    background-color: gainsboro;
+    box-shadow: inset 0px 0px 0px 0px grey;
+}
+
+div.icon {
+    text-align: center;
+    padding: 20px;
+    filter: blur(4px);
+}
+
+div.icon img {
+    width: 70px;
+}
+
+div.rollover {
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+div.graphic {
+    width: 40%;
+}
+
+.show {
+    display: flex !important;
+}
+
+div.footer {
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 70px 70px 0px 0px;
+    box-shadow: 10px -10px 20px gainsboro;
+    background-color: white;
+}
+
+div.note {
+    width: 33.3333%;
+    padding: 40px;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: bold;
+}
+
+
+
+
+/*                   */
+/* TRANSPARENCY PAGE */
+/*                   */
+
+
+
+
+div.navbar {
+    padding-top: 4%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap; 
+}
+
+div.tab {
+    padding: 20px;
+    background-color: white;
+    border-radius: 40px 40px 0px 0px;
+    box-shadow: 6px -6px 6px gainsboro;
+}
+
+div.tab img {
+    width: 6vh;
+}
+
+div.tab.home:hover {
+    transform: scale(1.2);
+    margin-left: 2%;
+    transition: 1s;
+}
+
+div.tab.home.no-hover a:hover {
+    background-color: white;
+}
+
+div.featureimage {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: white;
+    border-radius: 0px 70px 0px 0px;
+    box-shadow: 10px -10px 20px gainsboro;
+    padding: 50px;
+}
+
+div.featureimage img {
+    width: 43%;
+} 
+
+div.item.page {
+    padding: 20px;
+}
+
+div.file {
+    padding-top: 30px;
+    text-align: center;
+    width: 100%;
+}
+
+div.file img {
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    border-radius: 30px 30px 30px 30px;
+    box-shadow: 0px 0px 20px grey;
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+
+div.infos {
+    position: fixed;
+    top: 17%;
+    left: 5%;
+    display: none;
+    background-color: white;
+    border-radius: 30px 30px 30px 30px;
+    box-shadow: 0px 0px 20px gainsboro;
+}
+
+div.infotitle {
+    width: 30%;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 30px 0px 0px 30px;
+    background-color: gainsboro;
+    padding: 20px;
+}
+
+div.info {
+    padding: 20px;
+    justify-content: center;
+}
+
+.bg-silver {
+    background-color: gainsboro;
+}
+
+.w1-8 {
+    width: 10.5%;
+}
+
+.w2-8 {
+    width: 25%;
+}
+
+.w3-8 {
+    width: 39.5%;
+}
+
+.w4-8 {
+    width: 50%;
+}
+
+.w5-8 {
+    width: 62.5%;
+}
+
+.w6-8 {
+    width: 75%;
+}
+
+.w7-8 {
+    width: 87.5%;
+}
+
+.w8-8 {
+    width: 100%;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1200px) {
+
+    div.title {
+        font-size: 7vw;
+    }
+
+    div.about {
+        font-size: 5.7vw;
+        line-height: 6vw;
+    }
+}
+
+
