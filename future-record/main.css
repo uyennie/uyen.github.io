@@ -26,8 +26,6 @@ span:hover {
 div.fullbleed {
     width: 100%;
     height: 100vh;
-    /* background-size: cover;
-    background-repeat: no-repeat; */
     position: fixed;
     top: 0px;
     left: 0px;
@@ -50,16 +48,9 @@ div.nav {
 div.folder {
     display: flex;
     flex-wrap: wrap; 
-    /* background-color: antiquewhite; */
     align-items: center;
     margin-bottom: 20px;
 }
-
-/* div.folder:hover {
-    box-shadow: inset 0px 0px 20px 0px grey;
-    border-radius: 100px;
-    background-color: white; 
-} */
 
 div.folder img {
     width: 100px;
@@ -85,8 +76,6 @@ div.folderhover.show {
 
 div.main {
     height: 150vh;
-    /* padding: 10px; */
-    /* background-color: white; */
     margin-top: 85vh;
 }
 
@@ -128,7 +117,6 @@ div.item {
     display: flex;
     flex-wrap: wrap; 
     align-items: center;
-    /* box-shadow: 5px 5px 10px gainsboro; */
     border-radius: 55px 55px 55px 55px;
 }
 
