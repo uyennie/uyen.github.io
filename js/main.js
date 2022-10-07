@@ -18,6 +18,7 @@ $( document ).ready(function() {
     //Toggle project content
     $('.project.greygoo').click(function() {
         $('.display.greygoo').toggle();
+        console.log("display project");
     })
 
 });
