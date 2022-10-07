@@ -1,0 +1,543 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F7EDEB;
+    perspective: 1000px;
+    overflow: hidden;
+}
+
+.holiday {
+    transform: translate( 830px, -240px ); 
+}
+
+
+.background {
+    opacity: 0;
+    transition: 2s ease;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -50% );
+    width: auto;
+    height: auto;
+    min-height: 105%;
+    min-width: 100%;
+    z-index: -1;
+}
+
+.scene, .object, .face {
+    position: absolute;
+    --rx :0deg; --ry: 0deg; --rz: 0deg; 
+    --tx: 0px; --ty: 0px; --tz: 0px;
+    transform: rotateX(var(--rx)) rotateY(var(--ry)) rotateZ(var(--rz)) translate3d(var(--tx),var(--ty),var(--tz));
+}
+
+.scene, .object {
+    transform-style: preserve-3d;
+    user-select: none;
+}
+
+.scene{
+    width: 670px;
+    height: 670px;
+    --rx: -19.5deg;  --ry: -30deg;
+    --tx: 15px; --ty: -57px; --tz: -75px;
+}
+
+
+/*        WALLS        */
+.walls .front  { 
+    --ry: 0deg;
+    --tx: 125px; --ty: 361px; --tz: 183px;
+}
+
+.walls .back   { 
+    --ry: 180deg;
+    --tx: -125px; --ty: 90px; --tz: 0px;
+}
+
+.walls .left   { 
+    --ry: 90deg;
+    --tx: -148px; --ty: 90px; --tz: -23px;
+}
+
+.walls .right  { 
+    --ry: 90deg;
+    --tx: -149px; --ty: 90px; --tz: 376px;
+}
+
+
+/*       BENCH       */
+.bench .front  { 
+    --ry: 0deg;
+    --tx: 125px; --ty: 349px; --tz: 297px;
+}
+
+.bench .top  { 
+    --rx: 90deg;
+    --tx: 125px; --ty: 204px; --tz: -256px;
+}
+
+
+/*       BEAMS 1       */
+.beams1 .front  { 
+    --ry: 0deg;
+    --tx: 125px; --ty: 133px; --tz: 183px;
+}
+
+.beams1 .right  { 
+    --ry: 90deg;
+    --tx: -172px; --ty: 133px; --tz: 136px;
+}
+
+
+/*       BEAMS 2       */
+.beams2 .front  { 
+    --ry: 0deg;
+    --tx: 502px; --ty: 133px; --tz: 184px;
+}
+
+.beams2 .left  { 
+    --ry: 90deg;
+    --tx: -174px; --ty: 132px; --tz: 491px;
+}
+
+
+/*       ROOF       */
+.roof {
+    --tx: 0px; --ty: 10px; --tz: -12px;
+}
+
+.roof .front  { 
+    --ry: 0deg;
+    --tx: 65px; --ty: 128px; --tz: 282px;
+}
+
+.roof .left   { 
+    --ry: 90deg;
+    --tx: -148px; --ty: 66px; --tz: -70px;
+}
+
+.roof .right  { 
+    --ry: 90deg;
+    --tx: -148px; --ty: 66px; --tz: 450px;
+}
+
+.roof .top  { 
+    --rx: 77deg;
+    --tx: 65px; --ty: 136px; --tz: 71px;
+}
+
+
+/*       FLOOR       */
+.floor .front  { 
+    --ry: 0deg;
+    --tx: -13.5px; --ty: 528px; --tz: 439px;
+}
+
+.floor .left   { 
+    --ry: 90deg;
+    --tx: -218px; --ty: 528px; --tz: -232px;
+}
+
+.floor .right  { 
+    --ry: 90deg;
+    --tx: -218px; --ty: 528px; --tz: 429px;
+}
+
+.floor .top   { 
+    --rx: 90deg;
+    --tx: -12px; --ty: 219px; --tz: -307px;
+}
+
+
+/*       CHAIR 1       */
+.chair1 {
+    --tx: 50px; --ty: 0px; --tz: 0px;
+}
+
+.chair1 .front  { 
+    --ry: 0deg;
+    --tx: 179px; --ty: 408px; --tz: 370px;
+}
+
+.chair1 .back   { 
+    --ry: 180deg;
+    --tx: -178px; --ty: 408px; --tz: -265px;
+}
+
+.chair1 .left   { 
+    --ry: 90deg;
+    --tx: -318px; --ty: 408px; --tz: 126px;
+}
+
+.chair1 .right  { 
+    --ry: 90deg;
+    --tx: -318px; --ty: 408px; --tz: 230px;
+}
+
+.chair1 .top   { 
+    --rx: 90deg;
+    --tx: 179px; --ty: 318px; --tz: -355px;
+}
+
+
+/*       CHAIR 2       */
+.chair2 {
+    --tx: 195px; --ty: 0px; --tz: 0px;
+}
+
+.chair2 .front  { 
+    --ry: 0deg;
+    --tx: 179px; --ty: 408px; --tz: 370px;
+}
+
+.chair2 .back   { 
+    --ry: 180deg;
+    --tx: -178px; --ty: 408px; --tz: -265px;
+}
+
+.chair2 .left   { 
+    --ry: 90deg;
+    --tx: -318px; --ty: 408px; --tz: 126px;
+}
+
+.chair2 .right  { 
+    --ry: 90deg;
+    --tx: -318px; --ty: 408px; --tz: 230px;
+}
+
+.chair2 .top   { 
+    --rx: 90deg;
+    --tx: 179px; --ty: 318px; --tz: -355px;
+}
+
+
+/*       SIGN       */  
+.sign {
+    transition: 1s;
+    transform: perspective( 1000px ) translate3d( 103px, 290px, 230px );
+    width: 55px;
+    height: 40px;
+    transform-style: preserve-3d;
+    cursor: pointer;
+}
+      
+ .sign .back {
+    transform: rotateY(180deg);
+  }
+      
+  .sign img {
+    max-height: 100%;
+    max-width: 100%;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    position: absolute;
+  }
+
+
+/*       NOODLES       */ 
+.noodle1 {
+    opacity: 0;
+    transition: 2s ease;
+    width: 100px;
+    height: 70px;
+    --tx: 236px; --ty: 247px; --tz: 266px;
+    cursor: pointer;
+}
+
+.noodle1 .front {
+    max-height: 100%;
+    max-width: 100%;
+    --ry: 0deg;
+}
+
+
+.noodle2 {
+    opacity: 0;
+    transition: 2s ease;
+    width: 100px;
+    height: 150px;
+    --tx: 366px; --ty: 183px; --tz: 266px;
+    cursor: pointer;
+}
+
+.noodle2 .front {
+    max-height: 100%;
+    max-width: 100%;
+    --ry: 0deg;
+}
+
+
+/*       UTENSILS       */
+.utensils {
+    opacity: 0;
+    transition: 2s ease;
+    width: 73px;
+    height: 220px;
+    --tx: 450px; --ty: 217px; --tz: 216px;
+}
+
+.utensils .front {
+    max-height: 100%;
+    max-width: 100%;
+    --ry: 0deg;
+}
+
+
+/*       POT       */
+.pot {
+    opacity: 0;
+    transition: 2s ease;
+    width: 120px;
+    height: 350px;
+    --tx: 152px; --ty: 118px; --tz: 147px;
+    cursor: pointer;
+}
+
+.pot .front {
+    max-height: 100%;
+    max-width: 100%;
+    --ry: 0deg;
+}
+
+/*       BOWLS       */
+.bowls {
+    cursor: pointer;
+    opacity: 0;
+    transition: 2s ease;
+    width: 100px;
+    height: 250px;
+    --tx: 107px; --ty: 202px; --tz: 221px;
+}
+
+.bowls .front {
+    max-height: 100%;
+    max-width: 100%;
+    --ry: 0deg;
+}
+
+
+/*       FLAGS       */
+.flags {
+     --tx: 0px; --ty: 10px; --tz: 0px; 
+    cursor: pointer;
+}
+
+.flag1 {
+    transition: 2s ease;
+    opacity: 1;
+    width: 115px;
+    height: 115px;
+    --tx: 103px; --ty: 104px; --tz: 257px;
+}
+
+.flag1 .front { max-height: 100%; max-width: 100%; }
+
+.flag2 {
+    transition: 2s ease;
+    opacity: 1;
+    width: 120px;
+    height: 130px;
+    --tx: 209px; --ty: 105px; --tz: 257px;
+    animation: moveLeft 3s linear infinite;
+    animation-play-state: paused;
+}
+
+
+@keyframes moveLeft {
+    0% { transform: translate3d( 209px, 104px, 257px );}
+    50% { transform: translate3d( 103px, 104px, 257px );}
+    100% { transform: translate3d( 209px, 104px, 257px );}
+}
+
+.flag2 .front { max-height: 100%; max-width: 100%; }
+
+.flag2:hover { animation-play-state: running; }
+
+.flag3 {
+    transition: 2s ease;
+    opacity: 1;
+    width: 115px;
+    height: 115px;
+    --tx: 319px; --ty: 101px; --tz: 257px;
+    animation: moveRight 3s linear infinite;
+    animation-play-state: paused;
+}
+
+
+@keyframes moveRight {
+    0% { transform: translate3d( 319px, 104px, 257px );}
+    50% { transform: translate3d( 426px, 104px, 257px );}
+    100% { transform: translate3d( 319px, 104px, 257px );}
+}
+
+.flag3 .front { max-height: 100%; max-width: 100%; }
+
+.flag3:hover { animation-play-state: running; }
+
+.flag4 {
+    transition: 2s ease;
+    opacity: 1;
+    width: 120px;
+    height: 120px;
+    --tx: 426px; --ty: 101px; --tz: 256px;
+}
+
+.flag4 .front {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+
+/*       LANTERNS       */
+.lantern1 {
+    width: 85px;
+    height: 200px;
+    --tx: 32px; --ty: 101px; --tz: 200px;
+}
+
+
+.lantern1 .one { 
+    max-height: 100%; max-width: 100%; --ry: 90deg; 
+    animation: rotateOne 4s linear infinite;
+}
+
+@keyframes rotateOne {
+    0% { transform: rotateY( 90deg ); ; }
+    50% { transform: rotateY( 270deg );  }
+    100% { transform: rotateY( 450deg );  }
+}
+
+.lantern1 .two { 
+    max-height: 100%; max-width: 100%; --ry: 0deg;
+    animation: rotateTwo 4s linear infinite;
+}
+
+@keyframes rotateTwo {
+    0% { transform: rotateY( 0deg ); }
+    50% { transform: rotateY( 180deg );  }
+    100% { transform: rotateY( 360deg );  }
+}
+
+.lantern1 .three { 
+    max-height: 100%; max-width: 100%; --ry: 30deg;
+    animation: rotateThree 4s linear infinite;
+}
+
+@keyframes rotateThree {
+    0% { transform: rotateY( 30deg ); }
+    50% { transform: rotateY( 210deg );  }
+    100% { transform: rotateY( 390deg );  }
+}
+
+.lantern1 .four { 
+    max-height: 100%; max-width: 100%; --ry: 60deg;
+    animation: rotateFour 4s linear infinite;
+}
+
+@keyframes rotateFour {
+    0% { transform: rotateY( 60deg ); }
+    50% { transform: rotateY( 240deg );  }
+    100% { transform: rotateY( 420deg );  }
+}
+
+.lantern1 .five { 
+    max-height: 100%; max-width: 100%; --ry: 120deg;
+    animation: rotateFive 4s linear infinite;
+}
+
+@keyframes rotateFive {
+    0% { transform: rotateY( 120deg ); }
+    50% { transform: rotateY( 300deg );  }
+    100% { transform: rotateY( 480deg );  }
+}
+
+.lantern1 .six { 
+    max-height: 100%; max-width: 100%; --ry: 150deg;
+    animation: rotateSix 4s linear infinite;
+}
+
+@keyframes rotateSix {
+    0% { transform: rotateY( 150deg ); }
+    50% { transform: rotateY( 330deg );  }
+    100% { transform: rotateY( 510deg );  }
+}
+
+.lantern2 {
+    width: 85px;
+    height: 200px;
+    --tx: 531px; --ty: 101px; --tz: 200px;
+}
+
+.lantern2 .one { 
+    max-height: 100%; max-width: 100%; --ry: 90deg;
+    animation: rotateOne 4s linear infinite;
+}
+
+.lantern2 .two { 
+    max-height: 100%; max-width: 100%; --ry: 0deg;
+    animation: rotateTwo 4s linear infinite;
+}
+
+.lantern2 .three { 
+    max-height: 100%; max-width: 100%; --ry: 30deg;
+    animation: rotateThree 4s linear infinite;
+}
+
+.lantern2 .four { 
+    max-height: 100%; max-width: 100%; --ry: 60deg;
+    animation: rotateFour 4s linear infinite;
+}
+
+.lantern2 .five { 
+    max-height: 100%; max-width: 100%; --ry: 120deg;
+    animation: rotateFive 4s linear infinite;
+}
+
+.lantern2 .six { 
+    max-height: 100%; max-width: 100%; --ry: 150deg;
+    animation: rotateSix 4s linear infinite;
+}
+
+
+/*       CHEF       */
+.chef {
+    cursor: pointer;
+    opacity: 0;
+    transition: 2s ease;
+    width: 180px;
+    height: 300px;
+    --tx: 239px; --ty: 130px; --tz: 71px;
+}
+
+.chef .front {
+    max-height: 100%;
+    max-width: 100%;
+    --ry: 0deg;
+}
+
+
+/*       MESSAGE       */
+.message {
+    opacity: 0;
+    transition: 1s ease;
+    width: 130px;
+    height: 120px;
+    --tx: 174px; --ty: 118px; --tz: 41px;
+}
+
+.message .front {
+    max-height: 100%;
+    max-width: 100%;
+    --ry: 0deg;
+}
+
+
+
+
+
+
