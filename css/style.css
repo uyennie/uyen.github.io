@@ -83,3 +83,21 @@ div.content {
     padding: 10px;
     overflow: scroll;
 }
+
+/* GLOBAL STYLES */
+
+.pinkgrad {
+    background: linear-gradient(0deg,pink 0%, whitesmoke 51%, pink 100%);
+}
+
+.greengrad {
+    background: linear-gradient(0deg, lightgreen 0%, whitesmoke 51%, lightgreen 100%);
+}
+
+.bluegrad {
+    background: linear-gradient(0deg, lightskyblue 0%, whitesmoke 51%, lightskyblue 100%);
+}
+
+.gol {
+    color: ;
+}
