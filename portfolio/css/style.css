@@ -6,17 +6,18 @@ body {
 a {
     text-decoration: none;
     color: black;
+    cursor: alias;
 }
 
 a:hover {
-    font-weight: bold;
+    font-style: italic;
 }
 
 div.portfolio {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    font-family: Arial narrow;
+    font-family: sans-serif;
 }
 
 /* SIDEBAR */
@@ -28,7 +29,7 @@ div.sidebar {
 }
 
 div.name {
-    font-size: 64px;
+    font-size: 36px;
 }
 
 div.logo {
@@ -36,41 +37,47 @@ div.logo {
     flex-wrap: wrap;
     padding: 10px;
     justify-content: center;
-    border-bottom: 1px solid black;
+    align-items: flex-end;
 }
 
 div.logo img {
-    width: 50%;
+    width: 100%;
 }
 
 div.nav {
     padding-left: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
-    font-size: 32px;
+    font-size: 24px;
     border-bottom: 1px solid black;
+}
+
+div.title.projects {
+    cursor: default;
 }
 
 div.display {
     display: none;
-    padding-top: 10px;
 }
 
-div.nav div.display {
-    font-size: 24px;
+div.nav div.display, div.nav div.nodisplay {
+    font-size: 18px;
 }
 
 div.description {
     border-top: 1px solid black;
     border-bottom: 1px solid black;
-    margin-left: 24px;
+    margin-left: 20px;
     padding-bottom: 10px;
     margin-bottom: 5px;
     margin-top: 5px;
 }
 
-div.project {
-    
+div.description {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    margin-bottom: 10px;
 }
 
 /* PROJECT CONTENTS */
@@ -84,6 +91,24 @@ div.content {
 }
 
 /* GLOBAL STYLES */
+
+/* PADDING */
+.padtop10 {
+    padding-top: 10px;
+}
+
+.padright20 {
+    padding-right: 20px;
+}
+
+/* CURSOR */
+.pointer {
+    cursor: pointer;
+}
+
+.default {
+    cursor: default;
+}
 
 .pinkgrad {
     background: linear-gradient(0deg,pink 0%, whitesmoke 51%, pink 100%);
