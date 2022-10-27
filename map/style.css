@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  img {
+    width: 100%;
+  }
+  
+  body {
+    font-size: 100px;
+    font-family: sans-serif;
+  }
+  
+  div.compass {
+    position: fixed;
+    width: 300px;
+    height: 300px;
+    z-index: 10;
+    left: 50%;
+    top: 50%;
+    /* margin-left: 150px;
+    margin-top: 150px; */
+    transform: translate(-50%, -50%);
+  }
+
+  div.map {
+    display: flex;
+    flex-wrap: wrap;
+    width: 300vw;
+  }
+  
+  div.mapBlock {
+    width: 100vw;
+    height: 100vw;
+    /* border: 1px solid black; */
+    overflow: scroll;
+    opacity: 0;
+    position: relative;
+    background-image: url("tiling1.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  
+  div.mapBlock.show {
+    opacity: 1;
+  }
+  
+  div.grid {
+    display:flex;
+    flex-wrap:wrap;
+  }
+
+  div.col {
+    width:33.33%;
+  }
+
+  span.italics {
+    font-style: italic;
+  }
+
+  div.text {
+    font-size: 30px;
+  }
+
+  span.btnlink {
+    background-color: lime;
+    cursor: pointer;
+  }
+  
+  div.btnSW {
+    cursor: pointer;
+  }
+  
+  div.btnN {
+    cursor: pointer;
+  }
+  
+  div.btnNW {
+    cursor: pointer;
+  }
+  

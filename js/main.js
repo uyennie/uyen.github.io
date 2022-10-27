@@ -31,19 +31,27 @@ $( document ).ready(function() {
     //Toggle project content//
     //////////////////////////
 
-    //hide all the divs except the one being toggled
+  //hide all the divs except the one being toggled
+  $('.project').click(function (context) {
+    console.log("gyrados");
+    const clickedItem = context.currentTarget.classList.value.split(' ').at(-1);
 
-
-    //Grey goo toggle
-    $('.project.greygoo').click(function() {
-        $('.display.greygoo').toggle();
-        console.log("display project");
-    })
-
-    //Instruction toggle
-    $('.project.instruction').click(function() {
-        $('.display.instruction').toggle();
-        console.log("display project");
-    })
-
+    if ($(`.display.${clickedItem}`).is(':hidden')) {
+      $('.project').map((_index, project) => {
+        //   This gets the last word in the project className string
+        const currentItem = project.classList.value.split(' ').at(-1);
+        console.log(currentItem);
+        if (
+          currentItem !== clickedItem &&
+          !$(`.display.${currentItem}`).is('hidden')
+        ) {
+          $(`.display.${currentItem}`).hide();
+        } else if (currentItem === clickedItem) {
+          $(`.display.${currentItem}`).show();
+        }
+      });
+    } else {
+      $(`.display.${clickedItem}`).hide();
+    }
+  });
 });
