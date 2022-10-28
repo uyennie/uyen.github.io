@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  img {
+    width: 100%;
+  }
+
+  @font-face {
+    font-family: "redaction";
+    src: url("Redaction35-Regular.woff");
+  }
+  
+  body {
+    font-size: 100px;
+    font-family: sans-serif;
+  }
+  
+  div.compass {
+    display: flex;
+    flex-wrap: wrap;
+    position: fixed;
+    width: 300px;
+    height: 300px;
+    z-index: 10;
+    left: 50%;
+    top: 50%;
+    /* margin-left: 150px;
+    margin-top: 150px; */
+    transform: translate(-50%, -50%);
+  }
+
+  div.border {
+    display: flex;
+    flex-wrap: wrap;
+    position: fixed;
+    width: 100%;
+    height: 100vh; 
+    z-index: 10;
+    /* left: 50%;
+    top: 50%; */
+    /* margin-left: 150px;
+    margin-top: 150px; */
+    /* transform: translate(-50%, -50%); */
+  }
+
+  .b1 {
+    width: 200px;
+  }
+
+  .b2 {
+    width: 200px;
+  }
+
+  .b3 {
+    width: 200px;
+  }
+
+  .b4 {
+    width: 200px;
+  }
+
+  div.map {
+    display: flex;
+    flex-wrap: wrap;
+    width: 300vw;
+  }
+  
+  /* MAPBLOCK */
+
+  div.mapBlock {
+    width: 100vw;
+    height: 100vw;
+    padding: 20px;
+    /* border: 1px solid black; */
+    overflow: scroll;
+    opacity: 0;
+    position: relative;
+    background-image: url("tile.png");
+    background-repeat: no-repeat;
+    background-size: contain; 
+  }
+  
+  div.mapBlock.show {
+    opacity: 1;
+  }
+  
+  div.grid {
+    display:flex;
+    flex-wrap:wrap;
+    /* height: 100vh;
+    overflow: scroll; */
+  }
+
+  div.col {
+    width:50%;
+  }
+
+  span.italics {
+    font-style: italic;
+  }
+
+  div.header {
+    
+  }
+
+  div.title {
+    font-family: "redaction";
+    line-height: 90px;
+  }
+
+  div.text {
+    font-size: 30px;
+  }
+
+  span.btnlink {
+    background-color: lime;
+    cursor: pointer;
+  }
+
+  /* BUTTONS */
+
+  div.btnNW {
+    color: transparent;
+    text-shadow: 0 0 0px black;
+  }
+
+  .btnNW:hover {
+    transition: 1s;
+    color: transparent;
+    text-shadow: 0 0 30px black;
+  }
+  
+
+  /* Globals */
+
+  .w100 {
+    width: 100%;
+  }
+
+  .w70 {
+    width: 70%;
+  }
+
+  .pointer {
+    cursor: pointer;
+  }

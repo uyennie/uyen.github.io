@@ -21,5 +21,33 @@ $(document).ready(function () {
     $(".btnNW").click(function () {
       $(".mapBlock.nw").get(0).scrollIntoView({ behavior: "smooth" });
     });
+
+    $(".btnNE").click(function () {
+      $(".mapBlock.ne").get(0).scrollIntoView({ behavior: "smooth" });
+    });
+
+    $(".btnS").click(function () {
+      $(".mapBlock.s").get(0).scrollIntoView({ behavior: "smooth" });
+    });
+
+    $(".btnE").click(function () {
+      $(".mapBlock.e").get(0).scrollIntoView({ behavior: "smooth" });
+    });
+
+    $(".btnW").click(function () {
+      $(".mapBlock.w").get(0).scrollIntoView({ behavior: "smooth" });
+    });
+
+    $(".btnSW").click(function () {
+      $(".mapBlock.sw").get(0).scrollIntoView({ behavior: "smooth" });
+    });
+
+    $(".btnSE").click(function () {
+      $(".mapBlock.se").get(0).scrollIntoView({ behavior: "smooth" });
+    });
+
+    $(".btnC").click(function () {
+      $(".mapBlock.c").get(0).scrollIntoView({ behavior: "smooth" });
+    });
   });
   
