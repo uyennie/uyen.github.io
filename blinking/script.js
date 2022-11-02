@@ -55,7 +55,6 @@ async function renderPrediction() {
   if (predictions.length > 0) {
     predictions.forEach(prediction => {
       const keypoints = prediction.scaledMesh;
-      document.body.style.background = 'var(--color-bg)';
       //If blinking is detected; run this;
       if (detectarPiscada(keypoints)) {
         console.log("-----> blink");
