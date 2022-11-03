@@ -5,6 +5,9 @@ const state = {
   predictIrises: true
 };
 
+let viewportHeight = window.innerHeight;
+let viewportWidth = window.innerWidth;
+
 let model,
   ctx,
   videoWidth,
@@ -32,6 +35,21 @@ async function setupCamera() {
     };
   });
 }
+
+/**
+ * Returns a random number between min (inclusive) and max (inclusive)
+ */
+function between(min, max) {  
+  return Math.floor(
+    Math.random() * (max - min + 1) + min
+  )
+}
+
+// Example:
+
+console.log(  
+  between(10, 200)
+)
 
 async function renderPrediction() {
   const predictions = await model.estimateFaces({
@@ -64,12 +82,21 @@ async function renderPrediction() {
         //Array of random content to appear
         //Make more arrays for coordinates here I think (?)
         var classNames = Array('x', 'y', 'z', 'a', 'b', 'c');
+        var xCoord = between(0, viewportWidth);
+        var yCoord = between(0, viewportHeight);
         var className = classNames[Math.floor(Math.random()*classNames.length)];
+        // var xCoord = xCoord[Math.floor(Math.random()*xCoord.length)];
+        // var yCoord = yCoord[Math.floor(Math.random()*yCoord.length)];
 
         div.classList.add(className);
         var text = document.createTextNode('');
         div.appendChild(text);
-        document.getElementById("randomBlinks").appendChild(div)
+        document.getElementById("randomBlinks").appendChild(div);
+        div.style.position = 'absolute';
+        div.style.width = '100%';
+        div.style.height = '250px';
+        div.style.top = yCoord + 'px';
+        div.style.left = xCoord + 'px';
         return null;
       }
     });
