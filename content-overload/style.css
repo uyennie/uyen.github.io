@@ -12,18 +12,33 @@ body {
   font-family: sans-serif;
 }
 
-#text {
-  
+div.nav {
+
 }
 
-button {
-  cursor: pointer;
+div.container {
+
 }
+
+div.content {
+
+}
+
+div.footer {
+
+}
+
+div.footer-info {
+
+}
+
+/* CONTENT AFTER BLINKS */
 
 div#randomBlinks {
   display: flex;
   flex-wrap: wrap;
   position: fixed;
+  pointer-events: none;
   width: 100%;
   height: 100vh;
 }

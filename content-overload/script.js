@@ -36,17 +36,14 @@ async function setupCamera() {
   });
 }
 
-/**
- * Returns a random number between min (inclusive) and max (inclusive)
- */
+//Returns a random number between min (inclusive) and max (inclusive)
 function between(min, max) {  
   return Math.floor(
     Math.random() * (max - min + 1) + min
   )
 }
 
-// Example:
-
+// Example random value from start/end numbers
 console.log(  
   between(10, 200)
 )
@@ -77,6 +74,7 @@ async function renderPrediction() {
       if (detectarPiscada(keypoints)) {
         console.log("-----> blink");
         
+        //Create container to hold all the images
         var div = document.createElement('div');
 
         //Array of random content to appear
@@ -162,17 +160,10 @@ async function mainLoaded() {
 //Run the main function
 main();
 
-// document.getElementById('turnon').addEventListener('click', function () {
-//   document.getElementById('status').innerHTML = 'Wait, please .✧*☽';
-//   console.log("testing button");
-  
-// });
-
-
 var leftEye_l, leftEye_r, leftEye_t, leftEye_b, rightEye_l, rightEye_r, rightEye_t, rightEye_b, aL, bL, earLeft, aR, bR, earRight;
 
-//Detect blinking 
-//From stack pls remember to credit the dude!!!!
+ //Detect blinking
+ //Code from: https://gist.github.com/kleysonr/d75494f239ad0dce561a55a624920693
 function detectarPiscada(keypoints) {
   leftEye_l = 263;
   leftEye_r = 362;
