@@ -17,6 +17,7 @@ let model,
 
 const VIDEO_SIZE = 500;
 const addText = document.getElementById('text');
+const left = document.getElementsByClassName('left');
 
 async function setupCamera() {
   video = document.getElementById("video");
@@ -41,8 +42,9 @@ function hh() {
   console.log(console.log('dfd'));
   if (!blinked) {
     console.log('why!!!! you do not blink!!!!!!');
-    document.body.style.transition = '0.25s';
-    document.body.style.opacity = 0;
+    // left.style.transition = '0.25s';
+    $(".left").css("transition", "0.25s");
+    $(".left").css("opacity", "0");
   }
   blinked = false;
 }
@@ -80,7 +82,7 @@ function hh() {
   
           console.log("blink");
 
-          document.body.style.opacity = opacity / 100;
+          $(".left").css("opacity", opacity / 100);
           return null;
         }
         
@@ -141,7 +143,7 @@ function hh() {
       { maxFaces: state.maxFaces }
     );
     renderPrediction();
-    setTimeout(function(){ window.setInterval(hh, 4000); }, 5000);
+    setTimeout(function(){ window.setInterval(hh, 4000); }, 4000);
     console.log("timer");
   }
   
