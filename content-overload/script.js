@@ -1,3 +1,8 @@
+$(".splash").click(function() {
+  $(".splash").addClass("remove");
+  main();
+});
+
 const state = {
   backend: "webgl",
   maxFaces: 1,
@@ -79,7 +84,7 @@ async function renderPrediction() {
 
         //Array of random content to appear
         //Make more arrays for coordinates here I think (?)
-        var classNames = Array('x', 'y', 'z', 'a', 'b', 'c');
+        var classNames = Array('x', 'y', 'z', 'a', 'b', 'c', 'd', 'e', 'f');
         var xCoord = between(0, viewportWidth);
         var yCoord = between(0, viewportHeight);
         var className = classNames[Math.floor(Math.random()*classNames.length)];
@@ -158,7 +163,7 @@ async function mainLoaded() {
 }
 
 //Run the main function
-main();
+// main();
 
 var leftEye_l, leftEye_r, leftEye_t, leftEye_b, rightEye_l, rightEye_r, rightEye_t, rightEye_b, aL, bL, earLeft, aR, bR, earRight;
 
