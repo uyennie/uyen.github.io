@@ -10,6 +10,16 @@
     font-family: "redaction";
     src: url("Redaction35-Regular.woff");
   }
+
+  @font-face {
+    font-family: "redaction-ital";
+    src: url("Redaction35-Italic.woff");
+  }
+
+  @font-face {
+    font-family: "18cent";
+    src: url("18thCtrKurTxt.woff");
+  }
   
   body {
     font-size: 100px;
@@ -20,12 +30,12 @@
     display: flex;
     flex-wrap: wrap;
     position: fixed;
-    width: 300px;
-    height: 300px;
+    width: 500px;
+    height: 500px;
     z-index: 10;
     pointer-events: none;
-    margin-left: -150px;
-    margin-top: -150px; 
+    margin-left: -250px;
+    margin-top: -250px; 
     left: 50%;
     top: 50%;
     transition: 0.5s;
@@ -45,6 +55,10 @@
     /* margin-left: 150px;
     margin-top: 150px; */
     /* transform: translate(-50%, -50%); */
+  }
+
+  div.border img {
+    height: 100vh;
   }
 
   div.map {
@@ -75,6 +89,9 @@
   div.grid {
     display:flex;
     flex-wrap:wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 12.5%;
     /* height: 100vh;
     overflow: scroll; */
   }
@@ -97,8 +114,8 @@
 
   div.centertitle {
     width: 100%;
-    font-size: 100px;
-    font-family: "redaction";
+    font-size: 90px;
+    font-family: "18cent";
     text-align: center;
   }
 
@@ -124,9 +141,9 @@
   }
 
   div.title {
-    font-size: 200px;
+    font-size: 250px;
     font-family: "redaction";
-    line-height: 190px;
+    line-height: 240px;
     text-align: center;
   }
 
@@ -171,4 +188,12 @@
 
   .pointer {
     cursor: pointer;
+  }
+
+  .crosshair:hover {
+    cursor: crosshair;
+  }
+
+  .italics {
+    font-family: "redaction-ital";
   }
