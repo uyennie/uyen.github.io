@@ -2,7 +2,7 @@ $(document).ready(function () {
     console.log("document ready");
 
     var compassDeg = 0;
-    var compassDegAmount = 15;
+    var compassDegAmount = 30;
   
     $(".mapBlock.c").get(0).scrollIntoView();
   

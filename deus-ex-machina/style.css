@@ -1,9 +1,13 @@
 * {
     box-sizing: border-box;
-  }
+}
   
   img {
     width: 100%;
+  }
+
+  ::selection {
+    color: rgb(201, 179, 237);
   }
 
   @font-face {
@@ -23,19 +27,19 @@
   
   body {
     font-size: 100px;
-    font-family: sans-serif;
+    font-family: arial narrow;
   }
   
   div.compass {
     display: flex;
     flex-wrap: wrap;
     position: fixed;
-    width: 500px;
-    height: 500px;
+    width: 400px;
+    height: 400px;
     z-index: 10;
     pointer-events: none;
-    margin-left: -250px;
-    margin-top: -250px; 
+    margin-left: -200px;
+    margin-top: -200px; 
     left: 50%;
     top: 50%;
     transition: 0.5s;
@@ -48,7 +52,7 @@
     position: fixed;
     width: 100%;
     height: 100vh; 
-    z-index: 10;
+    z-index: 9;
     pointer-events: none;
     /* left: 50%;
     top: 50%; */
@@ -59,6 +63,24 @@
 
   div.border img {
     height: 100vh;
+    box-shadow: 2px 2px 2px black;
+  }
+
+  div.dungeon {
+    display: flex;
+    flex-wrap: wrap;
+    position: fixed;
+    align-items: flex-end;
+    /* justify-content: flex-end; */
+    width: 25%;
+    height: 100vh;
+    z-index: 10;
+    pointer-events: none;
+    /* left: 50%;
+    top: 50%; */
+    /* margin-left: 150px;
+    margin-top: 150px; */
+    /* transform: translate(-50%, -50%); */
   }
 
   div.map {
@@ -77,7 +99,7 @@
     overflow: scroll;
     opacity: 0;
     position: relative;
-    background-image: url("background.png");
+    background-image: url("background.jpg");
     background-repeat: no-repeat;
     background-size: contain; 
   }
@@ -130,6 +152,13 @@
     border-color: gainsboro;
     border-style: ridge;
     font-family: cursive;
+  }
+
+  div.author {
+    margin-top: 50px;
+    font-size: 40px;
+    font-family: arial narrow;
+    font-weight: bold;
   }
 
   div.col {
