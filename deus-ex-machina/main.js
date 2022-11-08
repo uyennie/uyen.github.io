@@ -80,7 +80,7 @@ $(document).ready(function () {
         });
     });
 
-    $('.centertitle').each(function (index) {
+    $('.centertitle.unknown').each(function (index) {
       var characters = $(this).text().split(" ");
         $this = $(this);
         $this.empty();
