@@ -26,7 +26,7 @@
   }
   
   body {
-    font-size: 100px;
+    font-size: 60px;
     font-family: arial narrow;
   }
   
@@ -129,14 +129,14 @@
   div.inner {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    justify-content:space-between;
+    align-items: flex-end;
     width: 50%;
   }
 
   div.centertitle {
     width: 100%;
-    font-size: 100px;
+    font-size: 70px;
     font-family: "18cent";
     text-align: center;
     margin-bottom: 20px;
@@ -156,7 +156,6 @@
   }
 
   div.author {
-    margin-top: 20px;
     font-size: 30px;
     font-family: arial narrow;
     font-weight: bold;
@@ -203,17 +202,23 @@
 
   /* BUTTONS */
 
-  div.btnNW {
-    color: transparent;
-    text-shadow: 0 0 0px black;
-  }
-
-  .btnNW:hover {
+  .btnStyle:hover {
     transition: 1s;
     color: transparent;
     text-shadow: 0 0 30px black;
   }
   
+  .btnStyle {
+    color: transparent;
+    text-shadow: 0 0 0px black;
+    background-color: rgb(201, 179, 237);
+    margin-top: 15px;
+    padding: 10px;
+    /* border-radius: 100px; */
+    border-style:groove;
+    border-width: 10px;
+    border-color: gainsboro;
+  }
 
   /* Globals */
 
