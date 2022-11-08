@@ -136,9 +136,10 @@
 
   div.centertitle {
     width: 100%;
-    font-size: 90px;
+    font-size: 100px;
     font-family: "18cent";
     text-align: center;
+    margin-bottom: 20px;
   }
 
   div.centertext {
@@ -155,10 +156,11 @@
   }
 
   div.author {
-    margin-top: 50px;
-    font-size: 40px;
+    margin-top: 20px;
+    font-size: 30px;
     font-family: arial narrow;
     font-weight: bold;
+    width: 40%;
   }
 
   div.col {
