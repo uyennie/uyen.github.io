@@ -80,5 +80,14 @@ $(document).ready(function () {
         });
     });
 
+    $('.centertitle').each(function (index) {
+      var characters = $(this).text().split(" ");
+        $this = $(this);
+        $this.empty();
+        $.each(characters, function (i, el) {
+          $this.append('<span class="word">' + el + " " + '</span>');
+        });
+    });
+
   });
   
