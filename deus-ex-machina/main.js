@@ -80,14 +80,19 @@ $(document).ready(function () {
         });
     });
 
-    $('.centertitle.unknown').each(function (index) {
-      var characters = $(this).text().split(" ");
-        $this = $(this);
-        $this.empty();
-        $.each(characters, function (i, el) {
-          $this.append('<span class="word">' + el + " " + '</span>');
-        });
+    $(".btnC").click(function () {
+      $(".mapBlock.c").get(0).scrollIntoView({ behavior: "smooth" });
+      compassDeg = compassDeg + compassDegAmount;
+      $(".compass").css("transform","rotate(" + compassDeg + "deg)");
     });
+
+    $('.icon.r-inventory').mouseenter(function() {
+      $('.inventory').addClass('show');
+    })
+
+    $('.icon.r-inventory').mouseleave(function() {
+      $('.inventory').removeClass('show');
+    })
 
   });
   
