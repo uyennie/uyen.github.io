@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&display=swap');
+
+body{
+   overflow: hidden;
+}
+
+::selection{
+  background:black;
+  color:white;
+}
+
+*{
+  font-family:'Fira Mono';
+  font-size:8pt;
+  padding:0;
+  margin:0;
+}
+
+.help{
+  background:white;
+  margin:10px;
+  text-decoration:none;
+  font-size:11pt;
+  border:solid black 1px;
+  padding:0 4px;
+  border-radius:35%;
+  color:black;
+  opacity:0.6;
+  position:absolute;
+}.help:hover{
+  opacity:1;
+}
+
+#help{
+  background:white;
+  position:absolute;
+  width:100vw;
+  height:100vh;
+  z-index:0;
+  display:none;
+}
+
+#help:target{
+  display:block;
+}
+
+.legend{
+  position:absolute;
+  margin:20vh 4vw;
+  border:solid black 1px;
+  padding:5px 12px;
+}
+
+.vertical{
+  opacity:0.6;
+  position:absolute;
+  height:100%;
+  width:0px;
+  left:50vw;
+  border-right:solid black 1px;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+}
+
+.horizontal{
+  opacity:0.6;
+  position:absolute;
+  height:0;
+  width:100%;
+  top:50vh;
+  border-top:solid black 1px;
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+}
+
+.person{
+  text-decoration:none;
+  color:black;
+  opacity:0.6;
+  position:absolute;
+}.person:hover{
+  opacity:1;
+}
+
+.writer:before{
+  content:'';
+  display:inline-block;
+  border-top:0.7em solid blue;
+  border-right:0.7em solid blue;
+  margin-right:0.5em;
+  }
+
+.artist:before{
+  content:'';
+  display:inline-block;
+  border-top:0.7em solid red;
+  border-right:0.7em solid red;
+  margin-right:0.5em;
+  }
+
+.musician:before{
+  content:'';
+  display:inline-block;
+  border-top:0.7em solid green;
+  border-right:0.7em solid green;
+  margin-right:0.5em;
+  }
+
+.thinker:before{
+  content:'';
+  display:inline-block;
+  border-top:0.7em solid orange;
+  border-right:0.7em solid orange;
+  margin-right:0.5em;
+}
+
+.artistwriter:before{
+  content:'';
+  display:inline-block;
+  border-top:0.7em solid red;
+  border-right:0.7em solid blue;
+  margin-right:0.5em;
+  }
+
+.thinkerwriter:before{
+  content:'';
+  display:inline-block;
+  border-top:0.7em solid blue;
+  border-right:0.7em solid orange;
+  margin-right:0.5em;
+  }
+
+.portrait{
+ border:solid black 1px;
+  height:50px;
+  width:50px;
+  object-fit:cover;
+ filter:grayscale(1);
+  image-rendering: pixelated;
+   position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display:none;
+  object-position:center;
+}
+
+
+#plath{
+  top:30vh;
+  left:60vw;
+}#plath:hover ~ #plathpic{
+  display:block;
+}#plathpic:after{
+  content:'hello';
+  height:100px;
+  width:100px;
+  border:solid red 1px;
+}
+
+#williams{
+  top:55vh;
+  left:65vw;
+}#williams:hover ~ #williamspic{
+  display:block;
+}
+
+#woolf{
+  top:47vh;
+  left:81vw;
+}#woolf:hover ~ #woolfpic{
+  display:block;
+}
+
+#sontag{
+  top:85vh;
+  left:10vw;
+}#sontag:hover ~ #sontagpic{
+  display:block;
+}
+
+#mitski{
+  top:9vh;
+  left:65vw;
+}#mitski:hover ~ #mitskipic{
+  display:block;
+}
+
+#fujio{
+  top:74vh;
+  left:30vw;
+}#fujio:hover ~ #fujiopic{
+  display:block;
+}
+
+#grimes{
+  top:15vh;
+  left:40vw;
+}#grimes:hover ~ #grimespic{
+  display:block;
+}
+
+#said{
+  top:90vh;
+  left:72vw;
+}#said:hover ~ #saidpic{
+  display:block;
+}
+
+#adnan{
+  top:43vh;
+  left:56vw;
+}#adnan:hover ~ #adnanpic{
+  display:block;
+}
+
+#sakamoto{
+  top:40vh;
+  left:30vw;
+}#sakamoto:hover ~ #sakamotopic{
+  display:block;
+}
+
+#torres{
+  top:70vh;
+  left:70vw;
+}#torres:hover ~ #torrespic{
+  display:block
+}
