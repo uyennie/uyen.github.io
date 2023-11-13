@@ -1,0 +1,233 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>a home</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Ctext y=%22.9em%22 font-size=%2290%22%3E▶︎%3C/text%3E%3C/svg%3E">
+    <style type="text/css">
+      :root {
+        --stroke-width: 2px;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        width: 100vw;
+        height: 100vh;
+        display: grid;
+        place-items: center;
+      }
+
+      header {
+        position: fixed;
+        bottom: 0;
+        left: 0; right: 0;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 0 1rem;
+        padding: .75rem 1rem;
+        z-index: 10;
+      }
+      header h1 {
+        margin: 0;
+        font-size: 1rem;
+        display: inline;
+      }
+      header p {
+        margin: 0;
+      }
+      header a {
+        color: inherit;
+      }
+
+      h2 {
+        position: fixed;
+        top: 2rem;
+        left: 2rem;
+        margin: 0;
+        font-size: 1rem;
+        line-height: 1;
+        font-weight: normal;
+        border: 2px solid;
+        padding: 1em;
+        background: white;
+        z-index: 10;
+      }
+      h2 details {
+        padding: 1rem;
+        margin: 1rem calc(-1rem - 2px) calc(-1rem - 2px);
+      }
+
+      #apartment {
+        display: grid;
+        gap: var(--stroke-width);
+        grid-template-columns: 6rem 6rem 4rem 8rem;
+        grid-template-rows: 9rem 12rem 4rem 4.5rem 6rem 14rem;
+        grid-template-areas:
+        "living-room living-room living-room dining-room"
+        "office      office      .           kitchen"
+        "entrance    .           .           kitchen"
+        "entrance    toilets     toilets     .      "
+        "entrance    bathroom    bathroom    .      "
+        ".           bedroom     bedroom     bedroom";
+        padding: calc(2rem + var(--stroke-width));
+      }
+
+      #living-room {
+        grid-area: living-room;
+        border-top-style: solid;
+        border-left-style: solid;
+        border-right: solid white;
+        border-bottom: solid white;
+      }
+
+      #dining-room {
+        grid-area: dining-room;
+        border-left: none;
+        border-bottom: none;
+        border-top-style: solid;
+        border-right-style: solid;
+      }
+
+      #kitchen {
+        grid-area: kitchen;
+        border-style: solid;
+        border-top: none;
+        border-left-style: dashed;
+      }
+
+      #office {
+        grid-area: office;
+        border-left: var(--stroke-width) solid;
+      }
+
+      #toilets {
+        grid-area: toilets;
+        border-right-style: solid;
+      }
+
+      #bathroom {
+        grid-area: bathroom;
+        border-bottom: var(--stroke-width) dashed white;
+        border-right-style: solid;
+      }
+
+      #bedroom {
+        grid-area: bedroom;
+        border: var(--stroke-width) solid;
+      }
+
+      #entrance {
+        grid-area: entrance;
+        margin: calc(-1 * var(--stroke-width));
+        border: none;
+        border-left: var(--stroke-width) solid;
+        border-bottom: var(--stroke-width) solid;
+      }
+
+      .door::before {
+        content: "";
+        width: 4rem;
+        height: 4rem;
+        display: block;
+        position: absolute;
+        border: var(--stroke-width) solid;
+        border-left-style: dotted;
+        border-bottom-color: white;
+        border-top-left-radius: 100%;
+      }
+
+      #entrance.door::before {
+        bottom: calc(-1 * var(--stroke-width));
+        left: .5rem;
+      }
+
+      #bedroom.door::before {
+        top: calc(-1 * var(--stroke-width));
+        left: 3rem;
+        transform: rotate(180deg);
+      }
+
+      details {
+        border: var(--stroke-width) dashed;
+        padding: 1em;
+        margin: calc(-1 * var(--stroke-width));
+        position: relative;
+      }
+      details:hover {
+        box-shadow: 0 0 2rem inset Lavender;
+      }
+      summary {
+        cursor: pointer;
+        margin-bottom: .125em;
+      }
+
+      input[type="color"] {
+        border: none;
+        outline: none;
+        width: 1em;
+        height: 1em;
+        padding: 0;
+        position: relative;
+        top: .125em;
+      }
+
+      details a {
+        cursor: help;
+        font-style: italic;
+        text-decoration: underline;
+        color: inherit;
+      }
+      details a:visited {
+        color: initial;
+      }
+      details em {
+        text-decoration: underline dotted;
+        color: inherit;
+      }
+
+    </style>
+  </head>
+  <body>
+    <h2>a home's<details><summary>details</summary></details></h2>
+    
+    <main id="apartment">
+
+      <details id="entrance" class="door" open="">
+        <summary>entrance</summary>
+        the <a href="#" onclick="javascript:window.open('entrance.jpg', 'view from the window', 'width=480,height=640')">view from the window</a>
+      </details>
+      <details id="kitchen" open="">
+        <summary>kitchen</summary>
+        the unorganised<a href="#" onclick="javascript:window.open('spice.jpeg', 'spice', 'width=524,height=524')"> spice tray</a>
+      </details>
+      <details id="dining-room" open="">
+        <summary>dining room</summary>
+        the <em>color</em> <input type="color" value="#6b4e48"> of the wooden tabletop
+      </details>
+      <details id="living-room" open="">
+        <summary>living room</summary>
+        the design of the <a href="#" onclick="javascript:window.open('https://i.pinimg.com/564x/5c/0c/83/5c0c8332af9d1c61f557f6bdb33b52f9.jpg', 'carpet', 'width=480,height=480')">carpet</a>
+      </details>
+      <details id="toilets" open="">
+        <summary>toilets</summary>
+        the <a href="#" onclick="javascript:window.open('toilet.jpg', 'toilet', 'width=480,height=640')"> toilet</a> i cry in
+      </details>
+      <details id="office" open="">
+        <summary>office</summary>
+        I can’t think of any particular details for this room… try another one!
+      </details>
+      <details id="bedroom" open="">
+        <summary>bedroom</summary>
+        the <a href="#" onclick="javascript:window.open('eye-shape.jpeg', 'eye shape', 'width=640,height=480')">eye shape</a> formed by the lamp shade when I look at it from the bed
+      </details>
+      <details id="bathroom" clas="door" open="">
+        <summary>bathroom</summary>
+        the lovely <a href="#" onclick="javascript:window.open('bathroom.jpeg', 'bathroom', 'width=562,height=423')">tile with a beachside motif</a>
+      </details>
+
+    </main>
+  </body></html>
