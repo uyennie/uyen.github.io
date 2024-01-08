@@ -5,9 +5,9 @@ import * as THREE from 'https://unpkg.com/three@0.154.0/build/three.module.js';
 // import GUI from 'https://cdn.jsdelivr.net/npm/lil-gui@0.18/+esm';
 
 // import vertexSource from './shader/vertex.glsl?raw'
-import bufferFragmentA from './shader/buffer-a-frag.glsl?raw'
-import bufferFragmentB from './shader/buffer-b-frag.glsl?raw'
-import bufferFragmentFinal from './shader/buffer-final-frag.glsl?raw'
+import bufferFragmentA from './shader/buffer-a-frag.glsl'
+import bufferFragmentB from './shader/buffer-b-frag.glsl'
+import bufferFragmentFinal from './shader/buffer-final-frag.glsl'
 
 import {BufferShader, BufferManager} from './buffer'
 
