@@ -1,0 +1,261 @@
+body {
+    background-color: white;
+    font-family: arial narrow;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    overflow-x: hidden !important;
+  }
+  
+  .missing {
+    display: none !important;
+  }
+  
+  /* -- HEADER -------------------------------------- */
+  
+  .header-circle {
+    width: 200px;
+    height: 200px;
+    right: 30px;
+    bottom: 30px;
+    border-radius: 50%;
+    background: blue;
+    position: fixed;
+    display: block;
+    z-index: 10 !important;
+  }
+  
+  .header-circle-txt {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    line-height: 1.1em !important;
+    color: white;
+    top: 40% !important;
+  
+    -webkit-animation: infiniteRotate 10s linear infinite; /* Safari */
+    animation: infiniteRotate 10s linear infinite;
+  }
+  
+  a:hover .header-circle {
+    filter: drop-shadow(0 0 0.75rem blue);
+  }
+  
+  @-webkit-keyframes infiniteRotate {    
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  /* Standard syntax */
+  @keyframes infinite-rotate {  
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+/* -- INTRO -------------------------------------- */
+.intro {
+    height: 35vh;
+    padding-top: 5%;
+    padding-left: 4%;
+    width: 50%;
+}
+
+.heading {
+    font-size: 5em;
+    line-height: 0.5em;
+    padding-bottom: 5vh;
+}
+
+.heading span {
+    font-size: 0.5em;
+}
+
+.subintro {
+    font-size: 1em;
+}
+
+  /* -- GRID -------------------------------------- */
+  .row {
+    width: 100vw;
+    height: auto;
+  
+    display: grid;
+    grid-template-columns: 10% 60% 21% 8%;
+  }
+  
+  .center {
+    font-size: 4em;
+    line-height: 1em;
+    vertical-align: center;
+    padding: 10px 16px 16px 20px;
+  }
+  
+  .left,
+  .right-a,
+  .right-b {
+    font-size: 18px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .circle {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: white;
+    position: relative;
+    display: block;
+  }
+  /* .one .circle,
+  .two .circle,
+  .three .circle,
+  .four .circle,
+  .five .circle,
+  .six .circle,
+  .seven .circle,
+  .eight .circle,
+  .nine .circle,
+  .ten .circle {
+    opacity: 0.6;
+  } */
+  
+  /* .complete {
+    opacity: 0.4;
+  } */
+  
+  .circle-txt {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    line-height: 1.1em;
+    
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  /* -- COLORS -------------------------------------- */
+  .one {
+    background-color:#f2eb41;
+  }
+  .one a:hover {
+    color:#f2eb41;
+  }
+  
+  .two {
+    background-color: #d8cef9;
+  }
+  .two a:hover {
+    color: #d8cef9;
+  }
+  
+  .three {
+    background-color: #75e571;
+  }
+  .three a:hover {
+    color: #75e571;
+  }
+  
+  .four {
+    background-color: #dbc582;
+  }
+  .four a:hover {
+    color: #dbc582;
+  }
+  
+  .five {
+    background-color: #ffd9ba;
+  }
+  .five a:hover {
+    color: #ffd9ba;
+  }
+  
+  .six {
+    background-color: #b4cef9;
+  }
+  .six a:hover {
+    color: #b4cef9;
+  }
+  
+  .seven {
+    background-color: #f2eb41;
+  }
+  .seven a:hover {
+    color: #f2eb41;
+  }
+  
+  .eight {
+    background-color: #d8cef9;
+  }
+  .eight a:hover {
+    color: #d8cef9;
+  }
+  
+  .nine {
+    background-color: #75e571;
+  }
+  .nine a:hover {
+    color: #75e571;
+  }
+  
+  .ten {
+    background-color: #dbc582;
+  }
+  .ten a:hover {
+    color: #dbc582;
+  }
+  
+  .eleven {
+    background-color: #ffd9ba;
+  }
+  .eleven a:hover {
+    color: #ffd9ba;
+  }
+  
+  .twelve {
+    background-color: #b4cef9;
+  }
+  .twelve a:hover {
+    color: #b4cef9;
+  }
+  
+  
+  /* -- MOBILE -------------------------------------- */
+  @media screen and (max-width:768px) {
+    .row { 
+      grid-template-columns: 15% 54% 28%; 
+    }
+  
+    .right-b {
+      display: none;
+    }
+  
+    .center {
+      font-size: 2em;
+    }
+    
+    .left,
+    .right-a,
+    .right-b {
+      font-size: 14px;
+    }
+  
+    .circle-txt {
+      width: 90%;
+    }
+  
+    .header-circle {
+      width: 100px;
+      height: 100px;
+    }
+    .header-circle-txt {
+      top: 35% !important;
+      font-size: 10px !important;
+    
+      -webkit-animation: infiniteRotate 10s linear infinite; /* Safari */
+      animation: infiniteRotate 10s linear infinite;
+    }
+  }

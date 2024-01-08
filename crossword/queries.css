@@ -1,0 +1,203 @@
+@media (max-width: 820px) {
+    .square-container {
+      display: flex;
+      flex-wrap: wrap;
+  
+      /* margin: 2vh; */
+      position: relative;
+      bottom: 2vh;
+      cursor: pointer;
+      margin-top: 10vh;
+      /* IPHONE X & + */
+      /* transform: scale(1.1);
+          margin-top: 1vh; */
+    }
+    .square-container-d {
+      display: none;
+    }
+    .square {
+      position: relative;
+      flex-basis: calc(100% / 10);
+      /* border: 1px solid; */
+      box-sizing: border-box;
+      outline: 1px solid;
+      outline-offset: -0.5px;
+    }
+  
+    .square::before {
+      content: "";
+      display: block;
+      padding-top: 100%;
+    }
+  
+    .square .content {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 5vw;
+    }
+    .mini {
+      font-size: 2.5vw;
+      position: absolute;
+      top: 0;
+      left: 1;
+      margin: 0.5vw;
+    }
+  
+    ul {
+      padding-left: 1vh;
+    }
+    li {
+      list-style: none;
+    }
+  
+    footer {
+      display: flex;
+      width: 95%;
+      justify-content: space-between;
+      font-size: 2.5vw;
+      position: fixed;
+      bottom: 0vh;
+      left: 0;
+      right: 0;
+      margin: auto;
+    }
+    footer div {
+      display: flex;
+    }
+  
+    a {
+      /* text-decoration: none; */
+      color: green;
+    }
+  
+    .o {
+      opacity: 0;
+    }
+    .h {
+      visibility: hidden;
+    }
+  }
+  
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 100;
+      margin: 0;
+      touch-action: manipulation;
+    }
+    .square-container {
+      display: none;
+    }
+    .square-container-d {
+      display: flex;
+      flex-wrap: wrap;
+      position: relative;
+      bottom: 2vh;
+  
+      margin-left: 4vh;
+      margin-right: 4vh;
+  
+      /* padding-bottom: 4vh; */
+  
+      /* IPHONE X & + */
+      /* transform: scale(1.1);
+              margin-top: 1vh; */
+    }
+  
+    .square {
+      position: relative;
+      flex-basis: calc(100% / 15);
+      /* border: 1px solid; */
+      box-sizing: border-box;
+      outline: 1px solid;
+      outline-offset: -0.5px;
+    }
+    .mini {
+      font-size: 1vw;
+      position: absolute;
+      top: 0;
+      left: 1;
+      margin: 0.75vw;
+    }
+  
+    .square::before {
+      content: "";
+      display: block;
+      padding-top: 100%;
+    }
+  
+    .square .content {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 3.5vw;
+    }
+    ul {
+      padding-left: 1vh;
+    }
+    ul:nth-child(1) {
+      padding-left: 0;
+    }
+    li {
+      list-style: none;
+    }
+  
+    .h {
+      visibility: hidden;
+    }
+  
+    .head-list {
+      top: 0;
+      position: absolute;
+    }
+    .o {
+      opacity: 0;
+    }
+    footer {
+      display: flex;
+      width: 98%;
+      justify-content: space-between;
+      font-size: 1vw;
+      position: fixed;
+      bottom: 0vh;
+      left: 0;
+      right: 0;
+      margin: auto;
+    }
+    footer div {
+      display: flex;
+    }
+  
+    a {
+      /* text-decoration: none; */
+      color: green;
+    }
+  }
+  @media only screen and (device-height: 667px) and (-webkit-device-pixel-ratio: 2),
+    (device-height: 736px) and (-webkit-device-pixel-ratio: 3) {
+    .square-container {
+      margin-top: 0vh;
+    }
+  }
+  
+  @media screen and (min-width: 1513px) {
+    footer {
+      font-size: 0.75vw;
+    }
+    .square-container-d {
+      width: 95%;
+      top: -10vh;
+    }
+  }
+  

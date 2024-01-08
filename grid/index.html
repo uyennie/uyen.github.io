@@ -1,0 +1,268 @@
+
+  <!--
+
+  for RISD 202O Senior Show
+  branding by Gabriel Abascal
+  web and development by Lorraine Li
+
+  -->
+
+  <html>
+    <head>
+    
+    
+    
+      <title>RISD GD 2020 Senior Show</title>
+    
+      <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+      <link rel="icon" href="/favicon.ico" type="image/x-icon">
+      <!-- Matter -->
+      <script src="matter.js"></script>
+    
+      <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
+    
+      <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.js"></script>
+    
+    
+    </head>
+    
+    <body>
+      <canvas id="canvas"></canvas>
+    
+      <!-- <img id="logo" src="asset/logo.svg" style=""></img> -->
+    
+      <div id="names">
+        <!-- <img id="cross" src="asset/cross.svg" style=""></img> -->
+        <div id="wrapper"></div>
+        <ul>
+          <li>EXHIBITING</li>
+    
+          <li><a href="https://www.instagram.com/ben.samp/"target="_blank">Ben Sampson</a></li>
+          <li>Brian Bailey</li>
+          <li><a href="https://www.carolynchens.com/"target="_blank">Carolyn Chen</a></li>
+          <li><a href="https://cparkdesign.com/"target="_blank">Cathy Park</a></li>
+          <li>Christina Chiu</li>
+          <li>Cooper Thompson</li>
+          <li><a href="https://damini.design/"target="_blank">Damini Agrawal</aå></li>
+          <li><a href="https://www.iwanaga.design"target="_blank">David Iwanaga</a></li>
+          <li><a href="https://www.emilymahar.com/"target="_blank">Emily Mahar</a></li>
+          <li><a href="https://www.ericasilver.com/"target="_blank">Erica Silver</a></li>
+          <li><a href="http://fireproofpuppydogs.com/"target="_blank">Felix Summ</a></li>
+          <li><a href="http://gcha.xyz"target="_blank">G Cha</li>
+          <li><a href="https://www.gabrielabascal.com/"target="_blank">Gabriel Abascal</a></li>
+          <li><a href="http://musiclifeg.com"target="_blank">George Lee</a></li>
+          <li><a href="https://www.graceyoung.design/"target="_blank">Grace Young</a></li>
+          <li><a href="https://www.jingraphics.org/"target="_blank">Hye Jin Cho</a></li>
+          <li><a href="https://uxfol.io/hyewonchoidesign"target="_blank">Hye Won Choi</a></li>
+          <li>Irvi Stefo</li>
+          <li>Isobel Connelly</li>
+          <li><a href="https://jackf.me/"target="_blank">Jack Fahnestock</a></li>
+          <li><a href="https://www.jae.kim/"target="_blank">Jae Won Kim</a></li>
+          <li><a href="https://javier-syquia.com/"target="_blank">Javier Syquia</a></li>
+          <li>Jeffrey Tang</li>
+          <li><a href="http://jjoungdesign.com/"target="_blank">Jennifer Joung</a></li>
+          <li><a href="https://jjeon.design/"target="_blank">Ju Eun Jeon</a></li>
+          <li><a href="https://www.junsunko.com/"target="_blank">Jun Ko</a></li>
+          <li><a href="https://www.libbymarrs.net/"target="_blank">Libby Marrs</a></li>
+          <li> <a href="http://lorraine.li"target="_blank">Lorraine Li</a></li>
+          <li><a href="https://lulianahndesign.com/"target="_blank">Lulian Ahn</a></li>
+          <li><a href="https://madeleiiine.info/"target="_blank">Madeleine Teh</a></li>
+          <li>Madison Ledford</li>
+          <li><a href="https://www.meganpeng.com/"target="_blank">Megan Peng</a></li>
+          <li><a href="https://minjikoo.com/"target="_blank">Minji Koo</a></li>
+          <li>Olivia Orr</li>
+          <li>Pooja Cavale</li>
+          <li><a href="http://poojanittdesign.com"target="_blank">Pooja Nitturkar</a></li>
+          <li><a href="https://www.rhrdesign.work/"target="_blank">Rory Hernandez-Romero</a></li>
+          <li><a href="https://www.smartlettedesign.com/"target="_blank">Sara Martinez</a></li>
+          <li><a href="https://www.sarapark.me"target="_blank">Sara Park</a></li>
+          <li>Serena Cabido</li>
+          <li><a href="https://www.soyoungchun.com/about"target="_blank">So Young Chun</a></li>
+          <li><a href="https://www.tarparker.com"target="_blank">Tarelle Parker</a></li>
+          <li><a href="https://tiger.exposed/"target="_blank">Tiger Dingsun</a></li>
+          <li><a href="https://vanissawong.com/"target="_blank">Vanissa Wong</a></li>
+          <li><a href="https://www.xioespana.com/"target="_blank">Xio Espana</a></li>
+          <li>Young-Eon Kim</li>
+          <br>
+          <a id="downloadlink" href="/catalog/intersections_catalog.pdf" download>DOWNLOAD CATALOG</a>
+          <br>
+        </ul>
+    
+        <style>
+          body {
+            margin: 0;
+            background: black;
+            cursor:help;
+    
+          }
+    
+    
+    
+          @font-face {
+            font-family: "Union";
+            src: url("fonts/union.woff") format("woff");
+    
+          }
+    
+          @font-face {
+            font-family: "Lido";
+            src: url("fonts/LidoSTF.otf") format("otf");
+    
+          }
+    
+          canvas {
+            position: absolute;
+            top: 0;
+    
+            font-family: "Lido";
+            cursor:w-resize;
+          }
+          
+          canvas.active {
+              cursor:e-resize;
+          }
+    
+          #logo {
+            display: block;
+            z-index: 10;
+            width: 96%;
+            position: absolute;
+            left: 0;
+            top: 0;
+    
+            padding: 2%;
+            pointer-events: none;
+            user-select: none;
+            transform-origin: top left;
+            transition: transform 0.25s;
+          }
+    
+          #logo.active {
+            transform: scale(0.7);
+          }
+    
+          /*
+          #names {
+            position: absolute;
+    
+            display: block;
+    
+            margin-top: 100vh;
+    
+    
+          } */
+          
+            #names {
+              cursor:default;
+          }
+    
+          ul {
+            /* flex-direction: column; */
+            flex-wrap: wrap;
+            /* display: flex; */
+    
+            margin: 0;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            padding: 0;
+            padding-left: 2vw;
+            cursor: default;
+          }
+    
+          ul li {
+            /* flex: 1 0 33%; */
+            font-size: 3vw;
+            font-family: "Union";
+            text-decoration: none;
+            list-style-type: none;
+            line-height: 1.2em;
+            margin: 0;
+            padding: 0;
+            padding-bottom: 0.2em;
+    
+    
+    
+    
+          }
+    
+          a {
+            target-name: new;
+            target-new: tab;
+            text-decoration: none;
+            color: black;
+    
+    
+          }
+    
+          a:hover {
+            text-decoration: underline;
+          }
+    
+    
+    
+          #names {
+            color: black;
+            width: 30vw;
+            transform: translateX(34vw);
+            transition: transform 0.25s;
+            position: fixed;
+            z-index: 10;
+            background: white;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            line-height: 0.9em;
+            overflow-y: scroll;
+            letter-spacing: -0.06em;
+          }
+    
+          #names.active {
+            transform: translateX(0);
+    
+          }
+    
+    
+          #downloadlink{
+            font-size: 3vw;
+            font-family: "Union";
+            text-decoration: none;
+            margin: 0;
+            line-height: 1.2em;
+    
+            margin-top:1em;
+            padding-bottom: 0.2em;
+    
+          }
+          #downloadlink:hover {
+            text-decoration: underline;
+          }
+    
+    
+          #cross {
+            position:fixed;
+            display: block;
+            width:3vw;
+            height:3vw;
+            top:3vh;
+            left:80%;
+    
+          }
+        </style>
+        <script src="script.js"></script>
+    
+        <!-- <script>
+        $("li").hover(function(){
+        this.style.cursor="url('icons/"+$(this).attr("data-icon")+"')";
+        console.log("url('icons/"+$(this).attr("data-icon")+"',default)");
+      });
+        </script> -->
+      </div>
+    
+    
+    </body>
+    
+    
+    
+    
+    </html>    
