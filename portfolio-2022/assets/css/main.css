@@ -1,0 +1,328 @@
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+
+}
+
+a {
+  color:currentColor;
+}
+
+body {
+  font-family:  "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #fff;
+  color: #000;
+  letter-spacing:-0.00001em;
+  width:95%;
+  /* padding:0.8em; */
+  overflow-x: 0;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 1.6em;
+  font-weight: normal;
+}
+
+div {
+  padding:0;
+}
+
+p{
+  font-size: 1rem;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 1);
+  font-style: normal;
+  line-height: 1.1;
+  margin:0;
+  margin-bottom:1em;
+}
+
+a:hover {
+  color:currentColor;
+  text-decoration: none;
+}
+
+p a {
+  font-size: 1rem;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 1);
+  font-style: normal;
+  line-height: 1.1;
+  margin:0;
+  /* margin-bottom:1em; */
+
+  text-decoration: none !important;
+}
+
+p a:hover {
+  color:currentColor;
+  text-decoration: none;
+  border-bottom: 1px solid black;
+}
+
+.mobile {
+  display:none;
+}
+
+/* HEADER */
+.header-wrapper {
+  width:100%;
+  position:fixed;
+  top:0;
+  background: white;
+  z-index:20;
+  padding-left: 0.8em;
+  /* box-shadow: 0px 0px 15px 0px gray; */
+  /* border-bottom: 2px dotted black; */
+}
+
+.row {
+  padding:0;
+  margin:0;
+  width:100%;
+}
+
+.column {
+  padding:0;
+}
+
+.col-md-3 {
+  padding-left:1em;
+}
+
+/* ABOUT */
+.site-heading .col-md-3 {
+  padding:0;
+}
+
+.site-heading {
+  width:95%;
+  padding:0.5em 0 0 0;
+  /* background:white; */
+}
+
+.info-wrapper {
+  /* margin-top:2em; */
+  margin-top: 3em;
+}
+
+.info-wrapper p{
+  margin-bottom: 0.5rem;
+  padding-bottom: 0;
+}
+
+/* PROJECT BLOCK */
+.project-wrapper {
+  margin-top:1em;
+  padding-bottom:0.5rem;
+}
+
+.bodycopy{
+  font-size: 1em;
+}
+
+.description {
+  padding-top:0.2em;
+}
+
+/* CAPTIONS */
+.container {
+  padding:0;
+}
+
+.spaced {
+  margin-top:1em;
+}
+
+.fixed {
+  position: fixed;
+  padding: 0;
+}
+
+img {
+  object-fit: cover;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* video settings??? */
+video {
+  width:100%;
+}
+
+iframe {
+  width:100%;
+  height:40vw;
+}
+
+/* CAPTIONS */
+.caption {
+  max-width: none;
+}
+
+.spec {
+  padding:0;
+}
+
+.specs .title {
+  text-align: center;
+}
+
+.specs .tags {
+  text-align: right;
+}
+
+/* CAROUSEL */
+.carousel-control-prev,
+.carousel-control-next{
+  width: 5%;
+}
+
+.carousel-control-prev {
+  cursor:w-resize;
+  /* cursor: none; */
+}
+
+.carousel-control-next{
+  cursor:e-resize;
+  /* cursor: none; */
+}
+
+/* .cursor {
+  position: fixed;
+  display: none;
+  z-index: 2000;
+  cursor: none;
+  pointer-events: none;
+  mix-blend-mode: difference;
+  color:white;
+  transform: translate(-50%,-50%);
+  font-size: 1rem;
+  text-transform: uppercase;
+} */
+
+.show {
+  display: block;
+}
+
+.fullwidth {
+  width: 100%;
+}
+
+.pad-80 {
+  padding-left: 0.8em;
+  padding-right: 0.8em;
+}
+
+/* MOBILE */
+@media only screen and (max-width: 767px) {
+  body {
+    font-size:0.9rem;
+    width:100%;
+  }
+
+  p {
+    font-size:0.9rem;
+  }
+
+  p a {
+    font-size:0.9rem;
+  }
+
+  .bodycopy {
+    font-size:0.9rem;
+  }
+
+  .col-md-3 {
+    padding-left:0em;
+  }
+
+  .mobile{
+    display:block;
+    margin-bottom: 1rem;
+  }
+
+  h1 {
+    margin-bottom: 1rem;
+  }
+
+  .project-wrapper {
+    padding-bottom: 0;
+    margin-top:0;
+  }
+
+  .caption {
+    padding-bottom: 0em;
+  }
+
+  .header-wrapper{
+    display:none;
+  }
+
+  .info-wrapper {
+    margin-top:0;
+  }
+
+  .info-wrapper p {
+    /* margin-bottom:1em; */
+  }
+
+  .contact {
+    margin-top:1em;
+    margin-bottom:1em;
+  }
+
+  .specs {
+    display: block;
+    position: relative;
+  }
+
+  .specs .num {
+    width: auto;
+  }
+
+  .specs .title {
+    text-align: left;
+  }
+
+  .specs .tags {
+    right:0;
+    position:absolute;
+  }
+  
+  .spec {
+    display: inline-block;
+    position:relative;
+    width:auto;
+  }
+
+  iframe {
+    width:100%;
+    height:55vw;
+    pointer-events: auto;
+  }
+
+  .carousel-control-prev {
+    cursor:w-resize;
+  }
+
+  .carousel-control-next{
+    cursor:e-resize;
+  }
+
+  .video {
+    cursor:auto;
+  }
+
+  /* .cursor {
+    display: none !important;
+    opacity:0;
+  } */
+
+  .fixed {
+   position:static;
+  }
+}
