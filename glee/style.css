@@ -30,6 +30,7 @@ h1 {
 
 p {
     font-size: 1.5em;
+    margin: 20px;
     width: 50%;
 }
 
@@ -47,3 +48,18 @@ a {
 a:hover {
     font-style: italic;
 }
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    div.content {
+      width: 100%;
+    }
+
+    p {
+        width: 100%;
+      }
+
+    img {
+        width: 80%;
+    }
+  }
