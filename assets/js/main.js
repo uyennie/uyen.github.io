@@ -1,9 +1,14 @@
+// function showDiv() {
+//   document.getElementById("projects").style.display = "";
+// }
+
+// function hideDiv() {
+//   document.getElementById("projects").style.display = "none";
+// }
+
+
 $(document).ready(function(){
-  $(document).scroll(function() {
-    if ($(document).scrollTop()>=105) {
-      $(".lowercase").fadeOut();
-    } else {
-      $(".lowercase").fadeIn();
-    }
-  })
+
+
 }); 
+
